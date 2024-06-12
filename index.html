@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Returns Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Crypto Returns Calculator</h2>
+
+<form id="cryptoForm">
+    <label for="cryptoSelect">Select Cryptocurrency:</label>
+    <select id="cryptoSelect" required></select>
+    
+    <label for="initialInvestment">Initial Investment ($):</label>
+    <input type="number" id="initialInvestment" name="initialInvestment" min="0" step="any" required>
+
+    <label for="initialPrice">Initial Price per Coin ($):</label>
+    <input type="number" id="initialPrice" name="initialPrice" min="0" step="any" required>
+
+    <button type="submit">Calculate Returns</button>
+</form>
+
+<div class="result" class="none" id="result"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
